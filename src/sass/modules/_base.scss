@@ -3,20 +3,17 @@
 // Elements css base
 // Couleur background 
 
-body {
-    background: linear-gradient(to right,
-            #4e837c,
-            #5d70ed);
-    font-family: Roboto, Helvetica, sans-serif;
-    padding: 50px 10px;
-}
 
 
-header {
-    h1 {
-        text-align: center;
+h1 {
+    text-align: center;
     }
+
+p {
+    text-align: center;
 }
 
-
+.score {
+    text-align: center;
+}
 
