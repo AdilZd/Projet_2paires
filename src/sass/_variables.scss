@@ -1,0 +1,24 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+//* Création de variable SASS
+$couleurRouge : #f71b09;
+
+//* Création de Spacer 
+$spacer : 5px;
+
+$spacers : map-merge($spacers, (
+    0 : 0px ,
+    1 : $spacer*1 ,
+    2 : $spacer*2 ,
+    3 : $spacer*3 ,
+    4 : $spacer*4 ,
+    5 : $spacer*5 ,
+));
+
+$couleur-perso : (
+    "orange" : rgb(207, 130, 22),
+    "rose"   : #df46c8,
+);
+
+$theme-colors : map-merge($theme-colors , $couleur-perso);

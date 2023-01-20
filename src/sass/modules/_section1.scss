@@ -1,0 +1,33 @@
+
+
+body {
+    background: linear-gradient(to right,
+            #4e837c,
+            #5d70ed);
+    font-family: Roboto, Helvetica, sans-serif;
+    padding: 50px 10px;
+}
+
+// Section 1 
+
+
+
+header {
+    h1 {
+        text-align: center;
+    }
+}
+
+// Div cartes 
+
+
+#cards1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+#cards2 {
+    display: flex;
+    justify-content: space-around;
+}
+
