@@ -60,7 +60,3 @@ document.addEventListener("keydown", function(e) {
       resetGame();
   }
 });
-
-
-
-
