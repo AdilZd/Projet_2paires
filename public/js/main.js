@@ -5,6 +5,8 @@ let compteurScore = document.querySelector(".score");
 let score = 0;
 let cartesRetournees = [];
 
+
+// Retourner les cartes 
 cards.forEach(card => {
     card.addEventListener("click", function() {
         if (!card.classList.contains("flipped")) {
@@ -13,7 +15,7 @@ cards.forEach(card => {
             score++;
             compteurScore.textContent = "Nombre de coups : " + score;
         }
-
+// Vérification des paires 
         if (cartesRetournees.length === 2) {
             if (cartesRetournees[0].getAttribute("data-attr") === cartesRetournees[1].getAttribute("data-attr")) {
                 cartesRetournees[0].classList.add("matched");
@@ -29,3 +31,14 @@ cards.forEach(card => {
         }
     });
 });
+
+// Mélange des cartes 
+let grid = document.querySelector(".grid");
+
+function melanger() {
+    cards.forEach(card => {
+        let randomCartes = Math.floor(Math.random() * cards.length);
+        card.style.order = randomCartes;
+    });
+}
+melanger();
