@@ -25,7 +25,7 @@ cards.forEach(card => {
                 setTimeout(function() {
                     cartesRetournees[0].classList.remove("flipped");
                     cartesRetournees[1].classList.remove("flipped");
-                    cartesRetournees = []             ;
+                    cartesRetournees = []                                     ;
                 }, 900);
             }
         }
@@ -42,5 +42,25 @@ function melanger() {
     });
 }
 melanger();
+
+
+// Fonction pour appuyer sur une touche pour relancer le jeu
+function resetGame() {
+
+  cards.forEach(card => {
+      card.classList.remove("flipped", "matched");
+      card.style.order = "initial";
+  });
+  score = 0;
+  compteurScore.textContent = "Nombre de coups : " + score;
+  melanger();
+}
+document.addEventListener("keydown", function(e) {
+  if (e.keyCode === 32) {
+      resetGame();
+  }
+});
+
+
 
 
