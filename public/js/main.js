@@ -32,4 +32,6 @@ cards.forEach(card => {
     });
 });
 
+// Mélange des cartes 
+
 
