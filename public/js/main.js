@@ -3,7 +3,7 @@
 let cards = document.querySelectorAll(".card");
 let compteurScore = document.querySelector(".score");
 let score = 0;
-let cartesRetournees = [];
+let cartesRetournees = []   ;
 
 
 // Retourner les cartes 
@@ -13,7 +13,7 @@ cards.forEach(card => {
             cartesRetournees.push(card);
             card.classList.add("flipped");
             score++;
-            compteurScore.textContent = "Nombre de coups : " + score;
+            compteurScore.textContent = "Nombre de coups : " + score  ;
         }
 // Vérification des paires 
         if (cartesRetournees.length === 2) {
@@ -25,7 +25,7 @@ cards.forEach(card => {
                 setTimeout(function() {
                     cartesRetournees[0].classList.remove("flipped");
                     cartesRetournees[1].classList.remove("flipped");
-                    cartesRetournees = [];
+                    cartesRetournees = []             ;
                 }, 900);
             }
         }
