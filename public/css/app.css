@@ -10,7 +10,7 @@ p {
 body {
   min-height: 100vh;
   font-family: lato, Helvetica, sans-serif;
-  background: linear-gradient(to right, #08d1b6, #c8a413);
+  background: linear-gradient(to right, #08d1b6, #e4a3e8);
   padding: clamp(20px, 5vw, 50px) 20px 10px;
 }
 
@@ -64,7 +64,7 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 5px;
-  background: #9b3c3c;
+  background: #ac5656;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -88,6 +88,44 @@ body {
   transform: rotateY(180deg);
 }
 
+
+/* Arc-en-ciel du background */
+.wrapper { 
+  height: 100%;
+  width: 100%;
+  left:0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+background-size: 1800% 1800%;
+
+-webkit-animation: rainbow 18s ease infinite;
+-z-animation: rainbow 18s ease infinite;
+-o-animation: rainbow 18s ease infinite;
+  animation: rainbow 18s ease infinite;}
+
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
 /*!
  * Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)

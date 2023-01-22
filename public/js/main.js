@@ -33,5 +33,14 @@ cards.forEach(card => {
 });
 
 // Mélange des cartes 
+let grid = document.querySelector(".grid");
+
+function melanger() {
+    cards.forEach(card => {
+        let randomCartes = Math.floor(Math.random() * cards.length);
+        card.style.order = randomCartes;
+    });
+}
+melanger();
 
 
