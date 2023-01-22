@@ -64,7 +64,7 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 5px;
-  background: #ac5656;
+  background: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,7 +90,7 @@ body {
 
 
 /* Arc-en-ciel du background */
-.wrapper { 
+.wrapper .back{ 
   height: 100%;
   width: 100%;
   left:0;
