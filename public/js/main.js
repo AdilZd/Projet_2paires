@@ -4,7 +4,7 @@ let cards = document.querySelectorAll(".card");
 let compteurScore = document.querySelector(".score");
 let score = 0;
 let cartesRetournees = []   ;
-
+let nbCartesAssociees = 0;
 
 // Retourner les cartes 
 cards.forEach(card => {
@@ -21,12 +21,17 @@ cards.forEach(card => {
                 cartesRetournees[0].classList.add("matched");
                 cartesRetournees[1].classList.add("matched");
                 cartesRetournees = [];
+                nbCartesAssociees += 2;
             } else {
                 setTimeout(function() {
                     cartesRetournees[0].classList.remove("flipped");
                     cartesRetournees[1].classList.remove("flipped");
                     cartesRetournees = []                                     ;
                 }, 900);
+            }
+            if (nbCartesAssociees === cards.length) {
+                // Afficher un message de félicitations
+                alert("Félicitations ! Vous avez trouvé toutes les paires en " + score + " coups.");
             }
         }
     });
@@ -60,3 +65,4 @@ document.addEventListener("keydown", function(e) {
       resetGame();
   }
 });
+
