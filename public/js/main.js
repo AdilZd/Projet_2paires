@@ -33,7 +33,7 @@ cards.forEach(card => {
 });
 
 // Mélange des cartes 
-let grid = document.querySelector(".grid");
+let grid = document.querySelector(".grid"); 
 
 function melanger() {
     cards.forEach(card => {
