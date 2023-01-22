@@ -8,12 +8,12 @@ p {
 }
 
 .score {
-  text-align: center;
+  text-align: center   ;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   max-width: 800px;
   gap: 10px;
   margin: 30px auto 0;
@@ -44,6 +44,11 @@ p {
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
   pointer-events: none;
 }
+
+.flipped .double-face {
+  transform: rotateY(180deg);
+}
+
 
 .face,
 .back {
