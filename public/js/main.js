@@ -26,19 +26,10 @@ cards.forEach(card => {
                     cartesRetournees[0].classList.remove("flipped");
                     cartesRetournees[1].classList.remove("flipped");
                     cartesRetournees = [];
-                }, 600);
+                }, 900);
             }
         }
     });
 });
 
-// Mélange des cartes 
-let grid = document.querySelector(".grid");
 
-function melanger() {
-    cards.forEach(card => {
-        let randomCartes = Math.floor(Math.random() * cards.length);
-        card.style.order = randomCartes;
-    });
-}
-melanger();

@@ -7,6 +7,14 @@ p {
   text-align: center;
 }
 
+body {
+  min-height: 100vh;
+  font-family: lato, Helvetica, sans-serif;
+  background: linear-gradient(to right, #08d1b6, #c8a413);
+  padding: clamp(20px, 5vw, 50px) 20px 10px;
+}
+
+
 .score {
   text-align: center   ;
 }
@@ -24,7 +32,7 @@ p {
   perspective: 1000px;
   cursor: pointer;
   -webkit-user-select: none;
-     -moz-user-select: none;
+    -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   transition: transform 0.2s ease-out;
